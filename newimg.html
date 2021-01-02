@@ -1,0 +1,95 @@
+<?php			
+	$_SESSION['nme']=$_REQUEST["myusername"];
+	
+
+?>
+
+<html>
+<head>
+<title>Home Page</title>
+<style type="text/css">
+<!--
+.style1 {color: #800040}
+.style3 {color: #800040; font-size: 12px; }
+-->
+</style>
+</head>
+<link rel="stylesheet" href="mm_travel2.css">
+<body  background="rtv2.jpg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> <td width="229" height="122">&nbsp;</td>
+    <td width="18">&nbsp;</td>
+    <td colspan="3" align="center" valign="top"><img src="r.jpg" width="326" height="122"></td>
+<td width="232">&nbsp;</td>
+  </tr>
+
+
+  <tr>
+  	<td colspan="7" id="dateformat" height="24"><p align="right"><a href="logout.php"><span class="style1">LOGOUT</span></a></p></td>
+  </tr>
+ <tr>
+    <td height="0"></td>
+    <td></td>
+    <td width="12"></td>
+    <td width="33"></td>
+    <td width="422"></td>
+    <td></td>
+    <td></td>
+ </tr>
+
+ <tr>
+    <td height="226" colspan="3" valign="top">
+
+
+<table width="193" height="205" border="0" cellpadding="0" cellspacing="0" id="navigation" background="rtv2.jpg">
+        <tr>
+          <td width="294">&nbsp;<br />
+		 &nbsp;<br /></td>
+        </tr>
+		        <tr>
+          <td width="294"><a href="comp_prof.php" class="navText">Profile</a></td>
+        </tr>
+
+        <tr>
+          <td width="294"><a href="iinbox.php" class="navText">Inbox</a></td>
+        </tr>
+        <tr>
+          <td width="294"><a href="ooutbox.php" class="navText">Outbox</a></td>
+        </tr>
+        <tr>
+          <td width="294"><a href="sndr.html" class="navText">Send request </a></td>
+        </tr>
+        <tr>
+          <td width="294"><a href="chpcmp.html" class="navText">Change password</a></td>
+        </tr>
+      </table></td>
+    <td>&nbsp;</td>
+    <td valign="top"><br />
+
+
+<center>
+</center>
+
+</center>
+
+
+<form method="post" action="newmc.php">
+<table width="110%" height="103" border="0" cellpadding="3" cellspacing="1" lign="right">
+  <tr>
+    <td height="19" colspan="3"><div align="left"><strong><span class="style3">&nbsp;Image updation</span></strong></div></td>
+  </tr>
+  <tr>
+    <td width="122" height="44"><p align="right"><strong><span class="style3">Upload new image</span></strong></td>
+    <td width="218"><input type="file" name="image" accept="image/jpeg"></td>
+    <td width="93"><p align="left"><input type="submit" value="replace"></p></td>
+  </tr>
+</table>
+</form>
+<p>&nbsp;</p>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+ </table>
+	
+</body>
+</html>

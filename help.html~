@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+<title>Home Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="mm_travel2.css" type="text/css" />
+
+<style type="text/css">
+<!--
+.style1 {color: #800040}
+-->
+</style>
+
+</head>
+<body background="gg.jpg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+<tr> <td align="center" colspan="6"><img src="r.jpg" width="326" height="122"></td>
+</tr>
+<tr>
+    <td colspan="7"></td>
+  </tr>
+
+  <tr>
+  	<td colspan="7" id="dateformat" height="25">&nbsp;&nbsp;</td>
+  </tr>
+ <tr>
+    <td colspan="7"></td>
+  </tr>
+  </table>
+<p align="center">**************Starting With Jobs2Day ******************</p> 
+
+
+
+
+<p align="center" class="NavText">
+
+	Jobs2 Day will help the candidate to search job, <br>
+apply for Job and become member of P1acement activlty. It will also<br> 
+help the employee to post jobs, upload company profile, select candidate from Job Portal database.<br> 
+
+'Firstly Candidate needs to do reg,istrat\on. In registtat\on 'he has to enter all his information
+ like personal details, educational details, experience details and upload resume.<br>
+ After the registration process Candidate become member of the Job Portal.<br>
+  Candidate can also search for job using different criteria and get result. <br>
+  If he wants he can apply for job.Similarly employee also has to do registration first. <br>
+In registration he has to enter employee information, requirement details like skills, functional area<br>
+ and upload 'company profile. Employee can search candidate and if he finds matching profile for his requirement<br>
+  he will call candidate for interview with the help of<br> placement division and placement division <br>
+  maintains all interview details and result of each candidate. <br>
+In the system candidate can search for job and apply for the jobs but only if they are registered.</p>

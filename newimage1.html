@@ -1,0 +1,120 @@
+<?php			
+	$_SESSION['nme']=$_REQUEST["myusername"];
+	
+
+?>
+
+<html>
+<head>
+<title>Home Page</title>
+<style type="text/css">
+<!--
+.style1 {color: #800040}
+.style2 {font-size: 14px}
+.style3 {
+	color: #800040;
+	font-size: 14px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<link rel="stylesheet" href="mm_travel2.css">
+<body background="rtv2.jpg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr> <td width="229" height="122">&nbsp;</td>
+    <td width="18">&nbsp;</td>
+    <td colspan="3" align="center" valign="top"><img src="r.jpg" width="326" height="122"></td>
+<td width="232">&nbsp;</td>
+  </tr>
+
+
+
+  <tr>
+  	<td colspan="6" id="dateformat" height="24"><p align="right"><a href="logout.php"><span class="style1">LOGOUT</span></a></p></td>
+  </tr>
+ <tr>
+    <td height="0" colspan="3" bgcolor="#003366"></td>
+    <td width="527" bgcolor="#003366"></td>
+    <td width="54" bgcolor="#003366"></td>
+    <td bgcolor="#003366"></td>
+  </tr>
+
+ <tr>
+    <td height="352" valign="top">
+	<table width="197" height="352" border="0" cellpadding="0" cellspacing="0" id="navigation" background="rtv2.jpg">
+        <tr>
+          <td width="234">&nbsp;<br />
+		 &nbsp;<br /></td>
+        </tr>
+		<tr>
+          <td width="183"><a href="user_info.php" class="navText">My profile</a> </td>
+        </tr>
+        <tr>
+          <td width="234"><a href="inbox.php" class="navText">Inbox</a></td>
+        </tr>
+        <tr>
+          <td width="234"><a href="outbox.php" class="navText">Outbox</a></td>
+        </tr>
+        <tr >
+          <td width="234"><a href="myresume.php" class="navText">My resume </a></td>
+        </tr>
+        <tr >
+          <td width="234"><a href="apti1.html" class="navText">Apti preparation </a></td>
+        </tr>
+        <tr>
+          <td width="234"><a href="intpr1.html" class="navText">Interview question </a></td>
+        </tr>
+		
+		 <tr>
+          <td width="234"><a href="chp.html" class="navText">Change password</a></td>
+        </tr>
+		
+		<tr>
+		          <td width="234"><a href="apti2new.html" class="navText">Search company</a></td>
+        </tr>
+    </table>	</td>
+    <td>&nbsp;</td>
+    <td width="5">&nbsp;</td>
+    <td valign="top"><br />
+
+
+      <center>
+      </center>
+      
+
+      <form method="post" action="newm.php">
+        <table width="110%" height="103" border="0" cellpadding="3" cellspacing="1" align="right">
+          <!--DWLayoutTable-->
+          <tr>
+            <td height="19" colspan="4"><p><span class="style1"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style2">Image updation </span></strong></span></p></td>
+      </tr>
+          <tr>
+            <td width="214" height="44"><p align="right" class="style3">Upload new image </td>
+        <td width="218"><input type="file" name="image" accept="image/jpeg"></td>
+        <td colspan="2"><p align="left"><input type="submit" value="replace"></p></td>
+      </tr>
+	  <tr><td height="72" colspan="3" valign="top">
+           <blockquote>
+             <p align="center"><img src="pr.jpg">                      </p>
+           </blockquote></td>
+<td width="5">&nbsp;</td>
+	  </tr>
+	  <tr>
+	    <td height="7"></td>
+	    <td></td>
+	    <td width="73"></td>
+	    <td></td>
+	    </tr>
+        </table>
+        </form>
+      <p>&nbsp;</p>
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</table>
+	
+</body>
+</html>
+

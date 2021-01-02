@@ -1,0 +1,113 @@
+<?php			
+	$_SESSION['nme']=$_REQUEST["myusername"];
+	
+
+?>
+
+<html>
+<head>
+<title>Home Page</title>
+<style type="text/css">
+<!--
+.style1 {color: #800040}
+-->
+</style>
+</head>
+<link rel="stylesheet" href="mm_travel2.css">
+<body  background="rtv2.jpg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+<tr> <td align="center" colspan="6"><img src="r.jpg" width="326" height="122"></td>
+</tr>
+
+
+  <tr>
+  	<td colspan="4" id="dateformat" height="25"><p align="right"><a href="logout.php"><span class="style1">LOGOUT</span></a></p>	</td>
+  </tr>
+ 
+  <tr><td width="189" height="20">  
+    <td width="4">&nbsp;</td>
+    <td width="100%">&nbsp;</td>
+    <td width="148">&nbsp;</td>
+  </tr>
+  
+
+ <tr>
+    <td height="550" valign="top">
+	<table width="221" height="252" border="0" cellpadding="0" cellspacing="0" id="navigation" background="rtv2.jpg">
+   
+	    <tr>
+          <td width="183" ><a href="user_info.php" class="navText">My profile</a> </td>
+        </tr>
+
+		
+        <tr>
+          <td width="183"><a href="inbox.php" class="navText">Inbox</a> </td>
+        </tr>
+        <tr>
+          <td width="183"><a href="outbox.php" class="navText">Outbox</a></td>
+        </tr>
+        <tr>
+          <td width="183"><a href="myresume.php" class="navText">My resume </a></td>
+        </tr>
+        <tr>
+          <td width="183" height="52"><a href="apti1.html" class="navText">Apti preparation </a></td>
+        </tr>
+        <tr>
+          <td width="183"><a href="intpr1.html" class="navText">Interview questions </a></td>
+        </tr>
+		 <tr>
+          <td width="183"><a href="chp.html" class="navText">Change password</a></td>
+        </tr>
+		<tr>
+          <td width="183" height="52"><a href="apti2new.php" class="navText">Search company </a></td>
+        </tr>
+      </table>
+ 	 <br />
+  	&nbsp;<br />
+  	&nbsp;<br />
+  	&nbsp;<br /> 	</td>
+    <td>&nbsp;</td>
+    <td valign="top"><br />
+	&nbsp;<br />
+	&nbsp;<br />
+
+
+
+
+
+<form method="post" action="chp1.php">
+      <table width="85%" height="227" border="0" cellpadding="3" cellspacing="1"  align="right">
+        <!--DWLayoutTable-->
+        <tr>
+          <td height="24" colspan="3" valign="top"><span class="style1"><strong>Change Password </strong></span></td>
+      </tr>
+        <tr>
+          <td width="45" height="45" align="center">   Old Password</td>
+        <td width="5">:</td>
+        <td width="144"><input name="op" type="password" id="mypassword" /></td>
+      </tr>
+        <tr>
+          <td height="45" width="45" align="center"><div align="center">New Password</div></td>
+        <td>:</td>
+        <td><input name="nwp" type="password" id="mypassword" /></td>
+      </tr>
+        <tr>
+          <td height="45"  width="45" align="center">   Re-enter password </td>
+        <td>:</td>
+        <td><input name="nwp1" type="password" id="myusername" /></td>
+      </tr>
+        <tr>
+          <td height="51">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;&nbsp;
+          <INPUT type="image" name="search" src="cp.gif" height=70 width=95 border="0"></td>
+      </tr>
+	  <tr><td colspan="5"><img src="pr-3.jpg"></td></tr>
+       
+        </table>
+      </form>
+	  
+	  </table>
+	</body>
+</html>

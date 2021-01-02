@@ -1,0 +1,29 @@
+create table user(id int(11) not null unique auto_increment,name varchar(20),address varchar(20),street varchar(20),city varchar(20),state varchar(30),country varchar(20),phone_no varchar(20),gender varchar(7),qualification varchar(30),kskills varchar(30),experience varchar(5),how_many int(11),exp_span varchar(10),salary int(20),exp_job varchar(20),user_name varchar(20) not null primary key,password varchar(20),resume varchar(50),email varchar(30),image varchar(50),info varchar(300));
+
+
+	
+create table company(id int(11) not null unique auto_increment,name varchar(20),street varchar(20),city varchar(20),state varchar(20),country varchar(20),ph_no varchar(20),email varchar(30),comp_type varchar(20),industry varchar(20),reg_no varchar(20),comp_name varchar(20) not null primary key,password varchar(20),terms varchar(30),image varchar(20),vacancies varchar(5));
+
+
+
+create table comp_msg(c_id int(11) not null primary key auto_increment,comp_name varchar(20),msg varchar(500),user_name varchar(20),time varchar(20));
+
+
+
+
+create table user_msg(u_id int(11) not null primary key auto_increment,user_name varchar(20),msg varchar(500),comp_name varchar(20),day int,month int,year int,time varchar(20));
+
+
+
+
+create table admin_msg(id int primary key auto_increment,name varchar(20),image varchar(100),days int(11),span varchar(10),card_no int(20),card_type varchar(10));
+
+
+
+create table comp_out(u_id int(11) not null primary key auto_increment,user_name varchar(20),msg varchar(500),comp_name varchar(20),day int,month int,year int,time varchar(20));
+
+
+
+
+create table user_out(c_id int(11) not null primary key auto_increment,comp_name varchar(20),msg varchar(500),user_name varchar(20),time varchar(20));
+

@@ -1,0 +1,86 @@
+<?php			
+	$_SESSION['nme']=$_REQUEST["myusername"];
+	
+
+?>
+
+<html>
+<head>
+<title>Home Page</title>
+<style type="text/css">
+<!--
+.style3 {color: #800040; font-weight: bold; font-size: 14px; }
+.style4 {color: #800040}
+-->
+</style>
+</head>
+<link rel="stylesheet" href="mm_travel2.css">
+<body background="rtv2.jpg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="109" height="122">&nbsp;</td>
+    <td colspan="3" align="center" valign="top"><img src="r.jpg" width="326" height="122"></td>
+    <td width="87">&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan="5"  height="24"><p align="right"><a href="logout.php" class="style4">LOGOUT</a></p></td>
+  </tr>
+  <tr>
+    <td height="0"></td>
+    <td width="88"></td>
+    <td width="9"></td>
+    <td width="328"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="352" colspan="2" valign="top" ><table width="197" height="352" border="0" cellpadding="0" cellspacing="0" id="navigation" background="rtv2.jpg">
+      <tr bgcolor="#007FFF">
+        <td width="183"><a href="user_info.php" class="navText">My profile</a> </td>
+      </tr>
+      <tr>
+        <td width="234"><a href="inbox.php" class="navText">Inbox</a></td>
+      </tr>
+      <tr>
+        <td width="234"><a href="outbox.php" class="navText">Outbox</a></td>
+      </tr>
+      <tr>
+        <td width="234"><a href="myresume.php" class="navText">My resume </a></td>
+      </tr>
+      <tr>
+        <td width="234"><a href="apti1.html" class="navText">Apti preparation </a></td>
+      </tr>
+      <tr>
+        <td width="234"><a href="intpr1.html" class="navText">Interview question </a></td>
+      </tr>
+      <tr>
+        <td width="234"><a href="chp.html" class="navText">Change password</a></td>
+      </tr>
+      <tr>
+        <td width="234"><a href="apti2new.html" class="navText">Search company</a></td>
+      </tr>
+    </table></td>
+    <td>&nbsp;</td>
+    <td colspan="2" valign="top">
+      <br />
+        <center>
+                        </center>
+      <form method="post" action="upn.php">
+          <table width="115%" height="103" border="0" cellpadding="3" cellspacing="1" align="right">
+            <tr>
+              <td height="19" colspan="3"><span class="style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume upload </span></td>
+            </tr>
+            <tr>
+              <td width="122" height="44"><p align="right" class="style3">Upload new resume </td>
+              <td width="218"><input type="file" name="file" accept="text/plain"></td>
+              <td width="93"><p align="left">
+                <input name="submit" type="submit" value="replace">
+              </p></td>
+            </tr>
+          </table>
+        </form>
+      <p>&nbsp;</p>
+    </table>
+</body>
+</html>

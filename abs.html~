@@ -1,0 +1,94 @@
+<html>
+
+<head>
+
+<title>Home Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="mm_travel2.css" type="text/css" />
+
+<style type="text/css">
+<!--
+.style1 {color: #800040}
+-->
+</style>
+
+<script type="text/javascript">
+
+function show_alert()
+{
+alert("Enter 'Digits' only");
+}
+function check(x)
+{
+if(isNaN(x))
+{
+show_alert();
+}
+
+}
+function validateEmail(id)
+{
+var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
+if(!emailPattern.test(id))
+{
+alert('Please provide a valid email address');
+email.focus;
+}
+}
+function MPClearField(field)
+{
+	var fieldName = field.name;
+	for(var n=0; n<defaultVals.length; n++)
+	 {
+		var thisField = defaultVals[n][0];
+		var thisDefault = defaultVals[n][1];
+		if (thisField == fieldName) 
+		{
+			if (field.value == thisDefault) field.value = '';
+		}
+	 }
+}
+function echeck(y)
+{
+
+validateEmail(y);
+
+}
+
+function nche(d)
+{
+	if(!isNaN(d))
+	{
+	alert("Enter alphabates only");
+	var f=this.getField("name");
+	f.value=f.defaultValue;
+	}
+
+}
+</script>
+</head>
+<body background="gg.jpg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <!--DWLayoutTable-->
+<tr> <td align="center" colspan="6"><img src="r.jpg" width="326" height="122"></td>
+</tr>
+<tr>
+    <td colspan="7"></td>
+  </tr>
+
+  <tr>
+  	<td colspan="7" id="dateformat" height="25">&nbsp;&nbsp;</td>
+  </tr>
+ <tr>
+    <td colspan="7"></td>
+  </tr>
+  </table>
+<p align="center">**************Jobs2Day Team******************</p> 
+<center><img src="myself.jpg" height="150" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Pn.jpg" height="150" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="darshan.jpeg" height="150" width="100"></center>
+<br>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rahul Mulay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pankaj Mulay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Darshan Gaikwad</p>
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Programmer)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Designiner)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Documentation)</p>
+
+</body>
+
+</html>

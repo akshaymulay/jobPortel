@@ -1,0 +1,35 @@
+<?php
+					
+	session_start();
+?>
+
+
+<?php
+
+		
+		$_SESSION['nme']="$myusername";
+		$comp_name=$_GET['cn'];
+		$un=$_SESSION['nme'];
+		$cn=$_GET['cn'];
+		$time="10.30am";
+
+
+		mysql_connect("localhost","root","");
+		mysql_select_db("job_portal");
+		
+		$eh="select resume from user where user_name='".$_SESSION['nme']."'";
+		
+		$n = mysql_query($eh) or die(mysql_error());
+
+		$res=mysql_fetch_array($n);
+		$resume=$res['resume'];
+		mysql_query("insert into user_out values('$cid','$cn','$resume','$un','$time');");
+		mysql_query("insert into comp_msg values('$cid','$cn','$resume','$un','$time');");
+
+		echo"resume is sent successfully";
+				header("location:inbox1.php");
+
+
+
+
+?>			

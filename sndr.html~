@@ -1,0 +1,220 @@
+<?php
+session_start();
+?>
+
+<html>
+<head>
+<title>Home Page</title>
+<style type="text/css">
+<!--
+.style1 {color: #800040}
+.style14 {font-size: 10px}
+.style16 {color: #800040; font-weight: bold; }
+.style17 {
+	color: #800040;
+	font-size: 16px;
+	font-weight: bold;
+}
+-->
+</style>
+<script type="text/javascript">
+function show_alert()
+{
+alert("Enter 'Digits' only");
+}
+function check(x)
+{
+if(isNaN(x))
+{
+show_alert();
+}
+
+}
+</script>
+</head>
+<link rel="stylesheet" href="mm_travel2.css">
+<body  background="gg.jpg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> <td width="229" height="122">&nbsp;</td>
+    <td width="18">&nbsp;</td>
+    <td colspan="3" align="center" valign="top"><img src="r.jpg" width="326" height="122"></td>
+<td width="232">&nbsp;</td>
+  </tr>
+
+
+
+  <tr>
+    <td colspan="7"></td>
+  </tr>
+
+  <tr>
+  	<td height="25" colspan="6" valign="top" ><p align="right">
+  	  <a href="logout.php"><span class="style1">LOGOUT</span></a></p></td>
+  </tr>
+ <tr>
+    <td colspan="7"></td>
+  </tr>
+
+  
+     <tr>
+    <td width="193" valign="top">
+<table width="175" height="205" border="0" cellpadding="0" cellspacing="0" id="navigation">
+        <tr>
+          <td width="204">&nbsp;<br />
+		 &nbsp;<br /></td>
+        </tr>
+		        <tr bgcolor="#007FFF">
+          <td width="204"><a href="comp_prof.php" class="navText">Profile</a></td>
+        </tr>
+
+        <tr bgcolor="#007FFF">
+          <td width="204"><a href="iinbox.php" class="navText">Inbox</a></td>
+        </tr>
+        <tr bgcolor="#007FFF">
+          <td width="204"><a href="ooutbox.php" class="navText">Outbox</a></td>
+        </tr>
+        <tr bgcolor="#007FFF">
+          <td width="204"><a href="sndr.html" class="navText">Send request </a></td>
+        </tr>
+        <tr bgcolor="#007FFF">
+          <td width="204"><a href="chpcmp.html" class="navText">Change password</a></td>
+        </tr>
+         <tr bgcolor="#007FFF">
+          <td width="204"><a href="adv.html" class="navText">Make My Advertisment <img src="w.gif" height="30" width="30"><span class="smallText"><font color="#FF0000">(Under construction)</font></span></a></td>
+        </tr>
+    </table>
+ 	 <br />
+  	&nbsp;<br />
+  	&nbsp;<br />
+  	&nbsp;<br /> 	</td>
+    <td width="188">&nbsp;</td>
+    <td colspan="2" valign="top"><br />
+
+
+<center><form method="post" action="sndr1.php">
+  <table width="100%" height="106" border="0" cellpadding="3" cellspacing="1">
+    <tr>
+      <td width="149" height="52"><span class="style16">Required Qualification </span></td>
+      <td width="5">:</td>
+      <td width="534"><p>
+      <select name="qf" >
+			                                  <option value="12th">
+		                                      12 th</option>
+			                                  <option value="B.E.">B.E.</option>
+			                                  <option value="Bsc">Bsc</option>
+			                                  <option value="Mba">Mba</option>
+			                                  <option value="Mcs">Mcs</option>
+			                                  <option value="Mcm">Mcm</option>
+			                                  <option value="Bcom">Bcom</option>
+			                                  <option value="Diploma ">Diploma </option>
+			                                  <option value="Phd">Phd</option>
+
+              <option value="Engineering (Computers)" >Engineering (Computers)</option>
+              <option value="MCA / Other Computer Courses" selected>MCA / Other Computer Courses</option>
+
+              <option value="Engineering (Mechanical)" >Engineering (Mechanical)</option>
+              <option value="Engineering (Electronics / Telec..." >Engineering (Electronics / Telec...</option>
+              <option value="Engineering (Electrical)" >Engineering (Electrical)</option>
+              <option value="Engineering (Chemical)" >Engineering (Chemical)</option>
+              <option value="Engineering (Civil)" >Engineering (Civil)</option>
+              <option value="Engineering (Production / Indust..." >Engineering (Production / Indust...</option>
+
+              <option value="Engineering (Instrumentation)" >Engineering (Instrumentation)</option>
+
+              <option value="Management (Marketing)" >Management (Marketing)</option>
+              <option value="Management (Finance)" >Management (Finance)</option>
+              <option value="Management (HR / Industrial Rela..." >Management (HR / Industrial Rela...</option>
+              <option value="Management (Advertising / Mass C..." >Management (Advertising / Mass C...</option>
+              <option value="Management (Systems)" >Management (Systems)</option>
+
+              <option value="Management (Others)" >Management (Others)</option>
+              <option value="ICWA" >ICWA</option>
+              <option value="CA" >CA</option>
+              <option value="CS" >CS</option>
+              <option value="Commerce" >Commerce</option>
+              <option value="Arts (Economics)" >Arts (Economics)</option>
+
+              <option value="Arts (Psychology)" >Arts (Psychology)</option>
+              <option value="Arts (Journalism)" >Arts (Journalism)</option>
+              <option value="Science (Dairy Technology)" >Science (Dairy Technology)</option>
+              <option value="Science (Food Technology)" >Science (Food Technology)</option>
+              <option value="Science (Bio-Technology)" >Science (Bio-Technology)</option>
+              <option value="Science (Chemistry)" >Science (Chemistry)</option>
+
+              <option value="Science (Physics)" >Science (Physics)</option>
+              <option value="Science (Statistics)" >Science (Statistics)</option>
+              <option value="Science (Agriculture)" >Science (Agriculture)</option>
+              <option value="Science (Others)" >Science (Others)</option>
+              <option value="Medicine" >Medicine</option>
+              <option value="Law" >Law</option>
+
+              <option value="Pharmacy" >Pharmacy</option>
+              <option value="Fashion Designing / Other Design..." >Fashion Designing / Other Design...</option>
+              <option value="Hotel Management" >Hotel Management</option>
+              <option value="Architecture" >Architecture</option>
+
+
+		                                    </select>
+          </td>
+    </tr>
+   
+    <tr>
+      <td><span class="style16">Applicant's Gender</span> </td>
+      <td>:</td>
+      <td><p>
+         <input id="" name="gender" value="male" type="radio" />
+         Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input id="" name="gender" value="female" type="radio" />Female
+        &nbsp;&nbsp;<input id="" name="gender" value="any" type="radio" />Both</p></td>
+    </tr>
+	<tr>
+	  <td><span class="style16">Experience</span></td>
+	  <td>:</td><td><p>
+         
+<input id="" name="How_many" type="text" size=10 / maxlength=2 onChange="check(this.value)">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+         (How many years in digits &amp; if no then write '0') </p></td></tr>
+      
+	  
+	  		  <tr>
+			  <td><span class="style16">Last Date For apply</span></td>
+			  <td>:</td>
+			  <td><select name="day">
+			  		<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+			  		</select>
+			  
+			  
+			  
+			  <select name="month">
+			  <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
+		  </select>
+			  
+			  
+			  <select name="year">
+				<option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option>			  
+	  </select>
+		 </td>
+		  </tr>
+	
+  </table>
+  <p>&nbsp;</p>
+  <p class="style17">Write your invitation below</p>
+  <p>
+    <textarea name="comment" cols="97" rows="15">
+	
+	</textarea>
+  </p>
+  <p></p>
+  <p></p>
+  </br>
+<center><input type="image" value="send" src="submit.gif" /></center>
+  </tr></p>
+  </form>
+</table>
+</td>
+  
+  </tr>
+</table>
+</body>
+</html>
